@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Sophiesa1@",
+    "database": "cashforce",
+    "localhost": "db",
+    "dialect": "mysql"
+  }
+}
