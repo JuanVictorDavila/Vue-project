@@ -22,7 +22,7 @@ export default {
 
 <style scoped>
 .invoice__container {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-direction: column;
 }

@@ -1,6 +1,6 @@
 <script setup>
-import SideBar from "../components/SideBar.vue";
-import InvoicesComponentVue from "../components/InvoicesComponent.vue";
+  import SideBar from "../components/SideBar.vue";
+  import InvoicesComponentVue from "../components/InvoicesComponent.vue";
 </script>
 
 <template>

@@ -2,7 +2,7 @@
   "openapi": "3.0.0",
   "info": {
     "title": "CashForce",
-    "description": "Uma Api que gerencia notas fiscais",
+    "description": "Um projeto para a Cash Force que consiste em uma Api que gerencia notas fiscais",
     "contact": {
       "name": "Juan Victor Davila Nascimento",
       "email": "juanvictor70@gmail.com"

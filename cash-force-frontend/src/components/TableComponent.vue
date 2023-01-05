@@ -1,6 +1,10 @@
 <script>
 import { getNfs } from "../services/api";
 import moment from "moment";
+
+// import BtnPadrao from "./BtnPadrao.vue";
+// import InfoCedente from "./InfoCedente.vue";
+
 export default {
   name: "TableComponent",
   data() {
@@ -27,7 +31,12 @@ export default {
         nf.emissionDate = moment(nf.emissionDate).format("DD/MM/YYYY");
       });
     },
+    getInfoBtn() {
+      const texto = `Em desenvolvimento, estamos trabalhando da melhor forma possível.`;
+      alert(texto);
+    },
   },
+
   created() {
     this.getNfs();
   },
@@ -56,8 +65,8 @@ export default {
         <td class="nf__status">
           {{ statusConverter[+nf.orderStatusBuyer].toUpperCase() }}
         </td>
-        <td class="provider__data">
-          <button class="provider">Dados do cedente</button>
+        <td class="provider__data" :key="nf.id">
+          <button class="botao-informacao" v-on:click="getInfoBtn()">Dados do cedente</button>
         </td>
       </tr>
     </tbody>
@@ -66,9 +75,9 @@ export default {
 
 <style scoped>
 table {
-  width: calc(100% - 96px);
+  /* width: calc(100% - 96px); */
   border-collapse: collapse;
-  margin-left: 48px;
+  margin-left: 15px;
   overflow: hidden;
 }
 
@@ -114,13 +123,23 @@ table tbody tr:last-of-type {
   color: rgb(0, 173, 142);
 }
 
-.provider {
+.botao-informacao {
   background-color: transparent;
   border: 1px solid rgb(202, 211, 255);
   border-radius: 50px;
   color: rgb(90, 90, 90);
-  line-height: 30px;
+  line-height: 25px;
   text-align: center;
-  width: calc(100% - 30px);
+  width: calc(125% - 30px);
+}
+
+.botao-informacao:hover {
+  background-color: #727D9433;
+  border: 1px solid rgb(202, 211, 255);
+  border-radius: 50px;
+  color: rgb(90, 90, 90);
+  line-height: 25px;
+  text-align: center;
+  width: calc(125% - 30px);
 }
 </style>

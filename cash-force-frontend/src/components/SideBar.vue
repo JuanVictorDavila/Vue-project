@@ -18,8 +18,12 @@ export default {
 
 <style scoped>
 .sidebar__container {
-  width: 336px;
-  height: 100%;
+  /* position: absolute; */
+  margin-left: -60px;
+  left: 0px;
+  top: 0px;
+  width: 288px;
+  height: 900px;
   box-shadow: inset rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
   background-color: rgb(251, 253, 254);
   display: flex;
@@ -41,6 +45,10 @@ export default {
   align-items: center;
   justify-content: flex-start;
   padding: 1rem 2rem;
+}
+
+.notas-fiscais:hover{
+  background-color: #727D9433;
 }
 
 .notas-fiscais span {
