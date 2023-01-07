@@ -45,13 +45,8 @@ Ainda em desenvolvimento.
 antes de iniciar o projeto, teve configurar o arquivo .env com as suas variáveis de ambiente na pasta /cash-force-backend/src
 
 sequindo as informações:
-->MYSQL_PORT=3306
-->MYSQL_DB_NAME=cashforce
-->MYSQL_PASSWORD=senha root
-->MYSQL_USER=usuário root
-->MYSQL_HOST=localhost
-->DB_PATH=/cash-force-project/cash-force-project/cash-force-backend/src/database/db.sql
-->API_PORT=3001
+
+->Localizar arquivo <strong>.env-example</strong> e renomear para <strong>.env</strong> na pasta /
 
 #### Frontend
 
